@@ -1,0 +1,26 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+title = "Honest FunPage"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+[languages]
+  [languages.cs]
+    weight = 1
+    languageName = "Čeština"
+    languageCode = "cs"
+  [languages.en]
+    weight = 2
+    languageName = "English"
+    languageCode = "en"
+[params]
+    images = ["/images/hero-bg.webp"]
+    [taxonomies]
+        series = "series"
+    [[params.links]]
+        icon = "github"
+        title = "GitHub"
+        url = "https://github.com/lukynmatuska/honestguide.fun"
+    [[params.links]]
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:info@honestguide.fun"

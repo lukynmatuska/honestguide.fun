@@ -1,0 +1,49 @@
+[where]
+other = "Kde"
+
+[when]
+other = "Kdy"
+
+[wordCount]
+one = "Tento článek má jedno slovo."
+other = "Tento článek má {{ .WordCount }} slov."
+
+[yourName]
+other = "Vaše jméno"
+
+[yourEmail]
+other = "Váš email"
+
+[subject]
+other = "Předmět"
+
+[message]
+other = "Zpráva"
+
+[loading]
+other = "Načítání"
+
+[sentMessage]
+other = "Vaše zpráva byla úspěšně odeslána."
+
+[sendMessage]
+other = "Odeslat zprávu"
+
+[order]
+other = "Objednat"
+
+[thankyou]
+other = "Děkujeme!"
+
+[eventSchedule]
+other = "Program"
+
+[eventScheduleDescription]
+other = "Jasně a přehledně"
+
+[readingTime]
+one = "Minuta čtení"
+other = "{{.Count}} minut čtení"
+
+[readArticle]
+other = "Číst článek"

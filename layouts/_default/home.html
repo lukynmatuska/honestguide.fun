@@ -1,0 +1,7 @@
+{{ define "main" }}
+<section id="hero">
+  <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+    <h1 class="mb-4 pb-0">{{ .Params.hero.heading | safeHTML }}</h1>
+    <p class="mb-4 pb-0">{{ .Params.hero.subheading | safeHTML }}</p>
+</section>
+{{ end }}

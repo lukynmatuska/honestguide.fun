@@ -1,0 +1,22 @@
+<header id="header" class="d-flex align-items-center {{ if not .IsHome }} header-inner {{ end }}">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+        <div id="logo" class="me-auto">
+            <a href="/"><img src="/favicon.ico" alt="Logo"></a>
+        </div>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                {{ $active := "" }}
+                {{ if eq $currentPage.RelPermalink .URL }}
+                {{ $active = " active" }}
+                {{ end }}
+                <li>
+                    <a href="{{ .URL }}" class="nav-link{{ $active }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+</header>
